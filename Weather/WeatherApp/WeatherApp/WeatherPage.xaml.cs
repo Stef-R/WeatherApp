@@ -17,9 +17,9 @@ namespace WeatherApp
 
         private async void GetWeatherBtn_Clicked(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(zipCodeEntry.Text))
+            //if (!String.IsNullOrEmpty(zipCodeEntry.Text))
             {
-                Weather weather = await Core.GetWeather(zipCodeEntry.Text);
+                Weather weather = await Core.GetWeather("tomt");
                 if (weather != null)
                 {
                     this.BindingContext = weather;
