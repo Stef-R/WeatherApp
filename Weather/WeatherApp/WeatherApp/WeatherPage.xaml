@@ -56,15 +56,15 @@
           
         </Button>
       </StackLayout>
-      <StackLayout BackgroundColor="White"
+      <StackLayout BackgroundColor="Gray"
         Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
         <Label       Text ="(0,1)" BackgroundColor="Yellow"  />
         <BoxView BackgroundColor="Aqua">
 
         </BoxView>
-        <Label Text="85 %"/>
-        <Label Text="15 C¤"/>
-        <Label Text="NW"/>
+        <Label Text="{Binding Humidity}"/>
+        <Label Text="{Binding Temperature}"/>
+        <Label Text="{Binding Wind}"/>
         <Label Text="UV"/>
         <Label Text="M"/>
 
